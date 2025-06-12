@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendor Login</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: url("https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1950&q=80")
+          no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      .header {
+        background-color: rgba(45, 62, 80, 0.9);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .login-container {
+        max-width: 420px;
+        margin: 50px auto;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 35px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        color: #2d3e50;
+      }
+
+      p {
+        margin-bottom: 20px;
+        color: #666;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: 600;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: border 0.3s;
+      }
+
+      input[type="email"]:hover,
+      input[type="password"]:hover {
+        border: 1px solid #0052cc;
+      }
+
+      button {
+        width: 100%;
+        padding: 14px;
+        background-color: #0052cc;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        margin-top: 25px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      button:hover {
+        background-color: #003f99;
+        transform: scale(1.02);
+      }
+
+      .extra-links {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .extra-links a {
+        display: block;
+        color: #0052cc;
+        margin-top: 8px;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .extra-links a:hover {
+        text-decoration: underline;
+        color: #003f99;
+      }
+
+      .extra-info {
+        margin-top: 35px;
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+      }
+
+      .extra-info p {
+        margin: 6px 0;
+      }
+
+      .extra-info a {
+        color: #0052cc;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Ivory Hunt - Vendor Portal</div>
+
+    <div class="login-container">
+      <h2>Login to Your Vendor Account</h2>
+      <p>Please enter your credentials below</p>
+
+      <form id="loginForm">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+
+        <button type="submit">Sign In</button>
+      </form>
+
+      <div class="extra-links">
+        <a href="#">Forgot Password?</a>
+        <a href="#">Don't have an account? Sign Up</a>
+      </div>
+
+      <div class="extra-info">
+        <p>Feel free to share your requirements with us.</p>
+        <p>To find out more about Ivory Hunt, please contact us at:</p>
+        <p>Phone: +91 - 8076924060, 981903762</p>
+        <p>
+          Email: <a href="mailto:sales@ivoryhunt.com">sales@ivoryhunt.com</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          window.location.href = "index.html";
+        });
+    </script>
+  </body>
+</html>

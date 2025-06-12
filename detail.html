@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Report</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Added Header -->
+     <header class="main-header">
+  <div class="header-left">
+    <img src="data:image/jpeg;base64,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" alt="Ivory Hunt Logo" class="logo" />
+    <h1>IVORY HUNT</h1>
+    <span class="subtitle">for Recruiting Solution</span>
+  </div>
+  <div class="header-right">
+    <a href="#" class="nav-link">Support</a>
+    <a href="mailto:sales@ivoryhunt.com" class="nav-link">Email Us</a>
+    <span class="nav-link">Help Line : +91 - 8076924060</span>
+    <a href="#" class="login-icon">🔒 LOGIN</a>
+  </div>
+</header>
+
+    <div class="container">
+      <h2>Detail Report</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>S. No.</th>
+            <th>System 1 Value</th>
+            <th>System 2 Value</th>
+            <th>Discrepancy</th>
+          </tr>
+        </thead>
+        <tbody id="detail-body"></tbody>
+      </table>
+      <div class="pagination">
+        <button onclick="prevPage()">&lt;&lt;</button>
+        <span id="page-info"></span>
+        <button onclick="nextPage()">&gt;&gt;</button>
+      </div>
+      <br />
+
+      <div class="export-btns">
+        <button class="export-btn" onclick="exportToExcel()">
+          <i class="fas fa-file-excel"></i> Export Detail Report
+        </button>
+        
+        <button class="export-btn" onclick="window.location.href='comparision.html'">
+          <i class="fas fa-arrow-left"></i> Back to Comparison
+        </button>
+
+        <button class="export-btn" onclick="window.location.href='login.html'">
+          <i class="fas fa-arrow-left"></i> Back to Login
+        </button>
+      </div>
+    </div>
+    </div>
+    <script>
+      function exportToExcel() {
+        alert("Excel export functionality would be implemented here");
+        // functionality would be implemented here
+      }
+    </script>
+    <script>
+      const data = Array.from({ length: 100 }, (_, i) => ({
+        id: i + 1,
+        system1: Math.floor(Math.random() * 10000),
+        system2: Math.floor(Math.random() * 10000),
+      }));
+
+      let currentPage = 1;
+      const rowsPerPage = 20;
+
+      function renderTable() {
+        const tbody = document.getElementById("detail-body");
+        tbody.innerHTML = "";
+        const start = (currentPage - 1) * rowsPerPage;
+        const end = start + rowsPerPage;
+        const pageData = data.slice(start, end);
+
+        pageData.forEach((row) => {
+          const tr = document.createElement("tr");
+          const discrepancy = row.system1 !== row.system2 ? "Yes" : "No";
+          tr.innerHTML = `
+          <td>${row.id}</td>
+          <td>${row.system1}</td>
+          <td>${row.system2}</td>
+          <td>${discrepancy}</td>
+        `;
+          tbody.appendChild(tr);
+        });
+
+        document.getElementById(
+          "page-info"
+        ).textContent = `Page ${currentPage} of ${Math.ceil(
+          data.length / rowsPerPage
+        )}`;
+      }
+
+      function prevPage() {
+        if (currentPage > 1) {
+          currentPage--;
+          renderTable();
+        }
+      }
+
+      function nextPage() {
+        if (currentPage < data.length / rowsPerPage) {
+          currentPage++;
+          renderTable();
+        }
+      }
+
+      renderTable();
+    </script>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>System Comparison UI</title>
+    <style>
+      body {
+        background-color: #e6efff;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        background-color: #341769;
+        color: white;
+        padding: 15px;
+        text-align: left;
+        font-size: 24px;
+      }
+      .container {
+        background-color: white;
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 8px;
+        width: 80%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 12px;
+        text-align: center;
+      }
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+      input {
+        width: 90%;
+        padding: 6px;
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .add-btn {
+        background-color: #28a745;
+        color: white;
+      }
+      /* .connect-btn {
+        background-color: #007bff;
+        color: white;
+      } */
+      .compare-btn {
+        background-color: orange;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">IVORY HUNT for Recruiting Solution</div>
+
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>System 1</th>
+            <th>System 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>F Name</td>
+            <td><input type="text" id="url1" /></td>
+            <td><input type="text" id="url2" /></td>
+          </tr>
+          <tr>
+            <td>L Name</td>
+            <td><input type="text" id="conn1" /></td>
+            <td><input type="text" id="conn2" /></td>
+          </tr>
+          <tr>
+            <td>Field 3</td>
+            <td><input type="text" id="user1" /></td>
+            <td><input type="text" id="user2" /></td>
+          </tr>
+          <tr>
+            <td>Field 4</td>
+            <td><input type="password" id="pass1" /></td>
+            <td><input type="password" id="pass2" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="buttons">
+        <button class="add-btn" onclick="addMoreFields()">Add More</button>
+
+        <!-- <button class="save-btn" onclick="saveSystem1()">Save</button>
+        <button class="connect-btn" onclick="connectSystem1()">Connect</button> -->
+
+          <button onclick="compareSystems()" class="compare-btn">Comparison</button>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function addMoreFields() {
+  const tableBody = document.querySelector("table tbody");
+  const rowCount = tableBody.rows.length + 1; // to calculate new field number
+  const newRow = document.createElement("tr");
+  const fieldLabel = `Field ${rowCount}`;
+
+  newRow.innerHTML = `
+    <td>${fieldLabel}</td>
+    <td><input type="text" /></td>
+    <td><input type="text" /></td>
+  `;
+
+  tableBody.appendChild(newRow);
+}
+    //   function saveSystem1() {
+    //     const data = {
+    //       url: document.getElementById("url1").value,
+    //       conn: document.getElementById("conn1").value,
+    //       user: document.getElementById("user1").value,
+    //       pass: document.getElementById("pass1").value,
+    //     };
+    //     alert("System 1 settings saved:\n" + JSON.stringify(data, null, 2));
+    //   }
+
+    //   function connectSystem1() {
+    //     const url = document.getElementById("url1").value;
+    //     if (url) {
+    //       alert("Connecting to: " + url);
+    //     } else {
+    //       alert("Please enter the URL for System 1.");
+    //     }
+    //   }
+
+      // function compareSystems() {
+      //   alert("Launching Comparison Tool...");
+      // }
+      function compareSystems() {
+  // redirect to report page
+  window.location.href = "report.html";
+}
+    </script>
+  </body>
+</html>
